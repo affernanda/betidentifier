@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site de Teste com Anúncios</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    .normal {
+      background-color: #e6f7ff;
+      border: 1px solid blue;
+    }
+
+    .anuncio {
+      background-color: #ffe6e6;
+      border: 1px solid red;
+    }
+
+    /* 🔝 Banner topo */
+    .banner-topo {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 70px;
+      background: #ffcccc;
+      border-bottom: 2px solid red;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 🔻 Banner rodapé */
+    .banner-rodape {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 70px;
+      background: #ffcccc;
+      border-top: 2px solid red;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 👉 Lateral fixa */
+    .banner-lateral {
+      position: fixed;
+      right: 10px;
+      top: 100px;
+      width: 250px;
+      height: 300px;
+      background: #ffe6e6;
+      border: 2px solid red;
+      z-index: 9999;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🔝 Banner topo -->
+  <div class="banner-topo">
+    💰 Aposte agora e ganhe dinheiro fácil! (bet365)
+  </div>
+
+  <!-- 🔻 Banner rodapé -->
+  <div class="banner-rodape">
+    🎰 Cassino online com bônus exclusivo!
+  </div>
+
+  <!-- 👉 Lateral -->
+  <div class="banner-lateral">
+    <h3>🔥 Anúncio</h3>
+    <p>Venha apostar no melhor cassino!</p>
+    <a href="https://betano.com">Ir para aposta</a>
+  </div>
+
+  <div class="container">
+
+    <h1>📰 Site de Notícias</h1>
+
+    <div class="card normal">
+      <h2>Tecnologia</h2>
+      <p>O mercado de tecnologia continua crescendo em 2026.</p>
+    </div>
+
+    <div class="card anuncio">
+      <h2>💸 Ganhe dinheiro</h2>
+      <p>Plataforma de apostas com retorno garantido!</p>
+    </div>
+
+    <div class="card normal">
+      <h2>Educação</h2>
+      <p>Aprender programação abre portas no mercado.</p>
+    </div>
+
+    <div class="card anuncio">
+      <h2>🎰 Cassino</h2>
+      <p>Jogue agora no melhor cassino online!</p>
+    </div>
+
+    <div class="card normal">
+      <h2>Saúde</h2>
+      <p>Praticar exercícios melhora a qualidade de vida.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
