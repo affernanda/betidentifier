@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras Bloqueadas | Conscious</title>
+    <link rel="stylesheet" href="palavras.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="cabecalho">
+            <nav class="menu">
+                <div class="linha-menu"></div>
+                <a href="index.html">Início</a>
+                <div class="linha-menu"></div>
+                <a href="sites_bloqueados.html">Sites Bloqueados</a>
+                <div class="linha-menu"></div>
+            </nav>
+
+            <section class="hero-palavras">
+                <h1>Palavras Bloqueadas</h1>
+                <p>Veja, adicione, desative ou remova palavras do banco da extensão.</p>
+            </section>
+        </header>
+
+        <section class="card card-formulario">
+            <h2>Adicionar nova palavra</h2>
+
+            <div class="formulario">
+                <input type="text" id="termo" placeholder="Palavra ou frase">
+                <input type="number" id="peso" placeholder="Peso 1 a 5" min="1" max="5">
+                <button id="btnAdicionar">Adicionar</button>
+            </div>
+        </section>
+
+        <section class="card card-lista">
+            <div class="topo-lista">
+                <h2>Lista de palavras</h2>
+                <span id="totalPalavras">0 palavras</span>
+            </div>
+
+            <div class="area-pesquisa">
+                <input type="text" id="pesquisaPalavra" placeholder="Pesquisar palavra...">
+            </div>
+
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Termo</th>
+                            <th>Peso</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelaPalavras"></tbody>
+                </table>
+            </div>
+
+            <p id="mensagemVazia" class="mensagem-vazia">
+                Nenhuma palavra cadastrada.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="palavras.js"></script>
+</body>
+
+</html>

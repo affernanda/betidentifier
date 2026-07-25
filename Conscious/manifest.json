@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "Conscious",
+  "version": "7.0",
+  "description": "Conscious, a extensão feita para um conteúdo mais consciente.",
+  "icons": {
+    "16": "pages/images/logo16.png",
+    "48": "pages/images/logo48.png",
+    "128": "pages/images/logo128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Conscious",
+    "default_popup": "pages/popup/popup.html",
+    "default_icon": {
+      "16": "pages/images/logo16.png",
+      "48": "pages/images/logo48.png",
+      "128": "pages/images/logo128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "pages/site/index.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "tesseract/tesseract.min.js",
+        "ocr.js",
+        "content.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "tesseract/worker.min.js",
+        "tesseract/tessdata/eng.traineddata",
+        "tesseract/tessdata/por.traineddata",
+        "tesseract/tesseract-core.wasm.js",
+        "tesseract/tesseract-core.wasm"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

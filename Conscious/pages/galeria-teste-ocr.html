@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria de Teste OCR</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .aviso {
+            max-width: 900px;
+            margin: 0 auto 30px auto;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #664d03;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            max-height: 180px;
+            object-fit: contain;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .nome-imagem {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .area-teste {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+        }
+
+        .area-teste h2 {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .area-teste p {
+            text-align: left;
+            margin-bottom: 0;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Galeria de Imagens para Teste OCR</h1>
+
+    <p>Esta página exibe as imagens teste1.png até teste25.png.</p>
+
+    <div class="aviso">
+        Todas as imagens possuem a classe <strong>ocr-test</strong>, usada pela sua extensão para forçar a análise OCR.
+    </div>
+
+    <div class="galeria">
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste1.png" alt="Imagem de teste 1">
+            <div class="nome-imagem">teste1.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste2.png" alt="Imagem de teste 2">
+            <div class="nome-imagem">teste2.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste3.png" alt="Imagem de teste 3">
+            <div class="nome-imagem">teste3.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste4.png" alt="Imagem de teste 4">
+            <div class="nome-imagem">teste4.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste5.png" alt="Imagem de teste 5">
+            <div class="nome-imagem">teste5.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste6.png" alt="Imagem de teste 6">
+            <div class="nome-imagem">teste6.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste7.png" alt="Imagem de teste 7">
+            <div class="nome-imagem">teste7.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste8.png" alt="Imagem de teste 8">
+            <div class="nome-imagem">teste8.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste9.png" alt="Imagem de teste 9">
+            <div class="nome-imagem">teste9.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste10.png" alt="Imagem de teste 10">
+            <div class="nome-imagem">teste10.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste11.png" alt="Imagem de teste 11">
+            <div class="nome-imagem">teste11.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste12.png" alt="Imagem de teste 12">
+            <div class="nome-imagem">teste12.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste13.png" alt="Imagem de teste 13">
+            <div class="nome-imagem">teste13.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste14.png" alt="Imagem de teste 14">
+            <div class="nome-imagem">teste14.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste15.png" alt="Imagem de teste 15">
+            <div class="nome-imagem">teste15.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste16.png" alt="Imagem de teste 16">
+            <div class="nome-imagem">teste16.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste17.png" alt="Imagem de teste 17">
+            <div class="nome-imagem">teste17.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste18.png" alt="Imagem de teste 18">
+            <div class="nome-imagem">teste18.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste19.png" alt="Imagem de teste 19">
+            <div class="nome-imagem">teste19.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste20.png" alt="Imagem de teste 20">
+            <div class="nome-imagem">teste20.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste21.png" alt="Imagem de teste 21">
+            <div class="nome-imagem">teste21.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste22.png" alt="Imagem de teste 22">
+            <div class="nome-imagem">teste22.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste23.png" alt="Imagem de teste 23">
+            <div class="nome-imagem">teste23.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste24.png" alt="Imagem de teste 24">
+            <div class="nome-imagem">teste24.png</div>
+        </div>
+
+        <div class="card">
+            <img class="ocr-test" src="imgs/teste25.png" alt="Imagem de teste 25">
+            <div class="nome-imagem">teste25.png</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

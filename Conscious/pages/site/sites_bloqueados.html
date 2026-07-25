@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites Bloqueados | Conscious</title>
+    <link rel="stylesheet" href="sites_bloqueados.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="cabecalho">
+            <nav class="menu">
+                <div class="linha-menu"></div>
+                <a href="index.html">Início</a>
+                <div class="linha-menu"></div>
+                <a href="palavras.html">Lista de Termos</a>
+                <div class="linha-menu"></div>
+            </nav>
+
+            <section class="hero-sites">
+                <h1>Sites Bloqueados</h1>
+                <p>Veja, adicione, desative ou remova sites do banco da extensão.</p>
+            </section>
+        </header>
+        <section class="card card-formulario">
+            <h2>Adicionar novo site</h2>
+            <div class="formulario">
+                <input type="text" id="termo" placeholder="URL do site bloqueado">
+                <button id="btnAdicionar">Adicionar</button>
+            </div>
+        </section>
+        <section class="card card-lista">
+            <div class="topo-lista">
+                <h2>Lista de sites</h2>
+                <span id="totalSites">0 sites</span>
+            </div>
+            <div class="area-pesquisa">
+                <input type="text" id="pesquisaSite" placeholder="Pesquisar site...">
+            </div>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Site</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaSites"></tbody>
+                </table>
+            </div>
+            <p id="mensagemVazia" class="mensagem-vazia">
+                Nenhum site cadastrado.
+            </p>
+        </section>
+    </main>
+    <script src="sites_bloqueados.js"></script>
+</body>
+
+</html>

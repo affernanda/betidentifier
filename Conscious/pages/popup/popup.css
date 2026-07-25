@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 320px;
+    min-height: 260px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background:
+        radial-gradient(circle at top right, rgba(15, 83, 9, 0.28), transparent 38%),
+        radial-gradient(circle at top left, rgba(32, 86, 167, 0.28), transparent 38%),
+        radial-gradient(circle at 80% 20%, rgba(139, 0, 255, 0.22), transparent 32%),
+        #000;
+    padding: 18px;
+    overflow: hidden;
+}
+
+.popup-container {
+    position: relative;
+    width: 100%;
+    min-height: 220px;
+    padding: 26px 22px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(14px);
+    overflow: hidden;
+}
+
+.popup-container::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: -55px;
+    top: -55px;
+    border-radius: 50%;
+    background: rgba(125, 239, 255, 0.16);
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+.popup-container::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -45px;
+    bottom: -50px;
+    border-radius: 50%;
+    background: rgba(139, 0, 255, 0.16);
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 18px;
+    letter-spacing: -1px;
+    text-shadow: 0 0 28px rgba(125, 239, 255, 0.35);
+}
+
+p {
+    position: relative;
+    z-index: 1;
+    max-width: 240px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+button {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 48px;
+    padding: 0 20px;
+    border: 1px solid rgba(125, 239, 255, 0.6);
+    border-radius: 999px;
+    cursor: pointer;
+    background: rgba(125, 239, 255, 0.12);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    box-shadow: 0 0 28px rgba(125, 239, 255, 0.12);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: rgba(125, 239, 255, 0.24);
+    box-shadow: 0 0 38px rgba(125, 239, 255, 0.35);
+}
+
+button:active {
+    transform: translateY(0);
+}
